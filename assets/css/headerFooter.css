@@ -8,7 +8,7 @@
 }
 
 .logo{
-    width: 75%;
+    width: 35%;
 }
 
 .headerContainer {
@@ -93,14 +93,14 @@
     box-sizing: border-box;
     width: 100%; 
     background-color: #FFD700; 
-    padding: 1%; 
+    padding: 0.313rem; 
     text-align: center;
     font-size: 1.2rem;
     font-weight: bold;
     margin-top: 0.625rem;
 }
 
-  /* --------------------- Footer ------------------- */
+/* --------------------- Footer ------------------- */
 
 .footerContainer{
     display: flex;
@@ -169,50 +169,14 @@
 
 /* Pour les écrans de petite taille (mobiles) */
 @media (max-width: 768px) {
+    .navbar,.spaceConnectMenu{
+        display: none;
+    }
     .headerContainer {
-        flex-direction: column;
         text-align: center;
     }
     .logo {
         width: 50%;
         margin: 0 auto;
-    }
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        background-color: #FCBC24;
-    }
-    .navbarElements {
-        flex-direction: column;
-        width: 30%;
-    }
-    .navbarElements li {
-        margin: 0.5rem 0;
-        width: 100%;
-        text-align: center;
-    }
-    .cartConnectContainer {
-        width: 100%;
-        flex-direction: column;
-        margin-top: 0.5rem;
-    }
-    .cartConnectContainer ul li {
-        width: 80%;
-    }
-    .bandeau {
-        font-size: 0.9rem;
-        padding: 0.5rem;
-    }
-    .footerContainer {
-        flex-direction: column;
-        text-align: center;
-    }
-    .socialNetwork ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .socialNetwork ul li {
-        margin: 5px;
     }
 }
