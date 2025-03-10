@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "sileighty";
+    src:
+      local("Sileighty"),
+      url("Sileighty-Regular.otf") format("opentype"),
+      url("Sileighty-Regular.ttf") format("trueType"),
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        /* margin: 2%; */
+        padding: 0;
+      }
+
+    h1 {
+        text-align: center;
+        font-family: "Sileighty", sans-serif;
+        color: #000000
+      }
+      
+      h2 {
+      
+          text-align: center;
+          font-family: "Sileighty", sans-serif;
+          color: #000000
+        }
+ 
+      
+      .parag_info{
+        font-family: "Roboto";
+        color: #000000
+      }
+      
+    .info-container{
+      background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        padding: 2%;
+        margin: 5%;
+        
+    }
+
+    .info-item{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border: 1px solid;
+        border-radius: 10px;
+        /* margin-left: 5%; 
+        margin-right: 5%;  */
+
+    }
+
+    .img_info{
+       margin-left: 10%; 
+    }
+
+    .text{
+        margin-top: 5%;
+        margin-right: 5%;
+        text-align: justify;
+    }
+
+    @media (max-width: 767px){
+        .info-container{
+            grid-template-columns: 1fr;
+            margin: 0px;
+            margin-left: 10px;
+        }
+
+        img{
+            margin-left: 0px;
+        } 
+    }
+
+    @media (min-width: 767px) and (max-width: 1023px){
+      .info-container{
+          grid-template-columns: 1fr;
+          margin: 0px;
+          margin-left: 10px;
+      }
+
+      img{
+          margin-left: 0px;
+      } 
+  }

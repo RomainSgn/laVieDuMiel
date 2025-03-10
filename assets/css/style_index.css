@@ -1,0 +1,200 @@
+@font-face {
+  font-family: "sileighty";
+  src:
+    local("Sileighty"),
+    url("Sileighty-Regular.otf") format("opentype"),
+    url("Sileighty-Regular.ttf") format("trueType"),
+}
+
+body {
+  /* margin: 2%; */
+  padding: 0;
+}
+
+
+
+h1{
+  text-align: center;
+  font-family: "Sileighty", sans-serif;
+  color: #000000;
+  margin: 3%
+}
+
+h2 {
+  text-align: center;
+  font-family: "Sileighty", sans-serif;
+  color: #000000;
+}
+
+h3 {
+  font-family: "Roboto";
+  color: #000000;
+
+}
+
+.parag_acceuil{
+  font-family: "Roboto";
+  color: #000000;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr; 
+  gap: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin: auto 2%;
+}
+
+.groupe-sections {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.nouveautes, .best-sellers {
+  margin: 20px 0; 
+}
+
+
+
+.actualites {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.produitsNouveautes, .produitsBest {
+  border: 1px solid;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.img_acceuil {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1%;
+}
+
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+.agenda {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+
+.evenements {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+}
+
+.evenement {
+  background-color: #ffffff; 
+  border: 1px solid #e5e4e2;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.evenement h3 {
+  color: #ff8c00;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    margin: 0; 
+  }
+  
+  h1, h2, h3 {
+    font-size: 1.5rem; 
+  }
+  
+  p {
+    font-size: 1rem; 
+  }
+  
+  .container {
+    display: block; 
+  }
+  
+  .actualites {
+    grid-template-columns: 1fr; 
+  }
+  
+  .evenements {
+    grid-template-columns: 1fr; 
+  }
+  
+  .produitsNouveautes, .produitsBest {
+    padding: 10px; 
+  
+  .agenda {
+    padding: 10px;
+  }
+  
+  .evenement {
+    padding: 10px;
+  }
+  
+  summary {
+    font-size: 1.2rem; 
+  }
+  }
+
+}
+
+
+@media (max-width: 767px) {
+body {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-size: 1.5rem; 
+}
+
+p {
+  font-size: 1rem; 
+}
+
+.container {
+  display: block; 
+}
+
+.actualites {
+  grid-template-columns: 1fr; 
+}
+
+.evenements {
+  grid-template-columns: 1fr; 
+}
+
+.produitsNouveautes, .produitsBest {
+  padding: 10px; 
+}
+
+.agenda {
+  padding: 10px; 
+}
+
+.evenement {
+  padding: 10px; 
+}
+
+summary {
+  font-size: 1.2rem; 
+}
+}
+
+
+
+

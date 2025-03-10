@@ -1,0 +1,98 @@
+   @font-face {
+      font-family: "sileighty";
+      src:
+        local("Sileighty"),
+        url("Sileighty-Regular.otf") format("opentype"),
+        url("Sileighty-Regular.ttf") format("trueType"),
+  }
+  
+  body {
+      font-family: Arial, sans-serif;
+      /* margin: 2%; */
+      padding: 0;
+  }
+  
+  h1 {
+      text-align: center;
+      font-family: "Sileighty", sans-serif;
+      color: #000000;
+  }
+  
+  h2 {
+      text-align: center;
+      font-family: "Sileighty", sans-serif;
+      color: #000000;
+  }
+  
+  .parag_apiculteur {
+      font-family: "Roboto";
+      color: #000000;
+      text-align: justify;
+  }
+  
+  .apiculteur-info {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      border: 1px solid;
+      border-radius: 7px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 2%;
+      margin: 5%;
+      background-color: #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    
+  }
+
+  
+  
+  .img_apiculteur {
+      width: 100%; 
+      height: auto; 
+      margin: 0 auto; 
+  }
+  
+  .apiculteur-text {
+      margin: 2%;
+  }
+  
+  summary {
+      cursor: pointer;
+      font-weight: bold;
+  }
+  
+  
+  @media (max-width: 767px) {
+      .apiculteur-info {
+          grid-template-columns: 1fr;
+      }
+  
+      h1, h2 {
+          font-size: 1.5rem; 
+      }
+  
+      p {
+          font-size: 1rem;
+      }
+
+      summary {
+        font-size: 1.2rem; 
+    }
+  }
+
+  @media (min-width: 767px) and (max-width: 1023px) {
+    .apiculteur-info {
+        grid-template-columns: 1fr;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem; 
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    summary {
+      font-size: 1.2rem; 
+  }
+}

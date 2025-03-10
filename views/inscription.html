@@ -1,0 +1,49 @@
+
+    <script src="assets/js/inscription.js"></script>
+    <main>
+        <h1>Inscription</h1>
+        <form action="" method="POST" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="nom">Nom :</label><br>
+            <input type="text" id="nom" name="nom" required placeholder="Indiquer votre nom">
+          </div>
+          <div class="form-group">
+            <label for="prenom">Prénom :</label><br>
+            <input type="text" id="prenom" name="prenom" required placeholder="Indiquer votre prénom">
+          </div>
+          <div class="form-group">
+            <label for="mdp">Mot de passe :</label><br>
+            <input type="password" id="mdp" name="mdp" required placeholder="Entrer votre mot de passe">
+            <button type="button" class="voir" onclick="togglePassword('mdp', this)">
+                <img class="eye-icon" src="asset/img/oeil.png" alt="afficher le mot de passe" id="eye-open-mdp" >
+                <img class="eye-icon" src="asset/img/cacher.png" alt="cacher le mot de passe" id="eye-closed-mdp" style="display:none;">
+            </button>
+          </div>
+          <div class="form-group">
+            <label for="mdp2">Confirmer le mot de passe :</label><br>
+            <input type="password" id="mdp2" name="mdp2" required placeholder="Entrer le mot de passe de confirmation">
+            <button type="button" class="voir" onclick="togglePassword('mdp2', this)">
+                <img class="eye-icon" src="assets/img/oeil.png" alt="afficher le mot de passe" id="eye-open-mdp">
+                <img class="eye-icon" src="assets/img/cacher.png" alt="cacher le mot de passe" id="eye-closed-mdp" style="display:none;">
+            </button>
+          </div>
+          <div class="form-group">
+            <label for="adresse">Adresse :</label><br>
+            <input type="text" id="adresse" name="adresse" required placeholder="indiquer votre adresse">
+          </div>
+          <div class="form-group">
+            <label for="telephone">Téléphone :</label><br>
+            <input type="tel" id="telephone" name="telephone" required placeholder="Indiquer votre N° de téléphone">
+          </div>
+          <div class="form-group">
+            <label for="CP">Code postal :</label><br>
+            <input type="number" id="CP" name="CP" required placeholder="indiquer votre code postal">
+          </div>
+          <div class="form-group">
+            <label for="ville">Ville :</label><br>
+            <input type="text" id="ville" name="ville" required placeholder="Indiquer votre ville">
+          </div>
+          <button class="btn" type="submit" name="submit" class="btn">Inscription</button>
+        </form>
+    </main> 
+

@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.bigContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    
+    flex: 1;
+}
+
+.logoLink {
+    width: 10%;
+}
+
+.logo{
+    width: 100%;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FCBC24;
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.875rem;
+    padding: 0.625rem;
+    background-image: url(../img/alveoles.png);
+    background-size: contain;
+}
+
+.navbar, .navbarElements {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbarElements{
+    width: 100%;
+}
+.navbarElements li{
+    list-style-type: none;
+    margin: auto 2.5%;
+    border: 0.125rem solid black;
+    border-radius: 0.438rem;
+    padding: 0.625rem;
+    font-weight: bold;
+}
+.navbarElements li:hover {
+    transform: scale(1.05);
+
+}
+.navbarElements li a {
+    text-decoration: none;
+    color: black;
+}
+.cartConnectContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+}
+.imgLink {
+    margin-right: 1.25rem;
+    border: 0.125rem solid black;
+    border-radius: 0.438rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.313rem;
+}
+.imgLink:hover {
+    transform: scale(1.05);
+}
+.cartImg{
+    width: 2.813rem;
+}
+.cartConnectContainer ul li{
+    list-style-type: none;
+    border: 0.125rem solid black;
+    border-radius: 0.438rem;
+    padding: 0.625rem;
+    text-align: center;
+    font-weight: bold;
+}
+.cartConnectContainer ul li:first-child{
+    margin-bottom: 0.625rem;
+}
+.cartConnectContainer ul li:hover {
+    transform: scale(1.05);
+
+}
+.cartConnectContainer ul li a{
+    text-decoration: none;
+    color: black;
+}
+.bandeau {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%; 
+    background-color: #FFD700; 
+    padding: 0.313rem; 
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0.625rem;
+}
+
+/* ------------------- Menu Burger ---------------- */
+.menuMobile {
+    display: none;
+    position: relative;
+    margin-right: 10px;
+    border-radius: 7px;
+}
+
+.burgerLogo {
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    background-color: #FCBC24;
+    border-radius: 7px;
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.burger a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 0;
+    margin: 0.25rem 0;
+    font-weight: bold;
+}
+
+.burger a:hover {
+    background-color: #FFD700;
+    border-radius: 5px;
+}
+
+.burger.active {
+    display: flex;
+}
+
+/* --------------------- Footer ------------------- */
+
+.footerContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FCBC24;
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    padding: 0.625rem;
+    background-image: url(../img/alveoles.png);
+    background-size: contain;
+}
+
+.mentions{
+    text-decoration: none;
+    color: black;
+}
+
+.socialNetwork{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialNetwork ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+}
+
+.socialNetwork ul li{
+    list-style-type: none;
+    margin: auto 10%;
+}
+
+.socialNetwork ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.imgNetwork{
+    width: 1.875rem;
+}
+
+@media (max-width: 1024px) {
+    .navbarElements li{
+        font-size: 0.75rem;
+    }
+    .cartConnectContainer {
+        width: 30%;
+    }
+    .cartConnectContainer ul li {
+        padding: 0.5rem;
+    }
+    .bandeau {
+        font-size: 1rem;
+    }
+    .footerContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .socialNetwork ul {
+        flex-direction: row;
+    }
+}
+
+/* Pour les écrans de petite taille (mobiles) */
+@media (max-width: 768px) {
+    .navbar,.spaceConnectMenu{
+        display: none;
+    }
+    .headerContainer {
+        text-align: center;
+    }
+    .cartConnectContainer {
+        width: fit-content;
+    }
+    .menuMobile {
+        display: block;
+    }
+}
