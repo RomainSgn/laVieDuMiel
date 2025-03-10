@@ -11,7 +11,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
-    gap: 6.25rem;
+    gap: 2.5%;
     grid-template-areas: "pc1 pc2 pc3"
                          "pc4 pc5 pc6";
 }
@@ -45,6 +45,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     border: 1px solid black;
     border-radius: 7px;
     padding: 1.25rem;
@@ -54,6 +55,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .titleImgProduct img {
@@ -80,10 +82,12 @@
 }
 
 @media (max-width: 1024px) {
+    .catalogueContainer {
+        margin-bottom: 10px;
+    }
     .gridContainerCatalogue {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, auto);
-        gap: 4rem;
         grid-template-areas: "pc1 pc2"
                              "pc3 pc4"
                              "pc5 pc6";
@@ -104,15 +108,11 @@
 
 @media (max-width: 767px) {
     .gridContainerCatalogue {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, auto);
-        gap: 2rem;
-        grid-template-areas: "pc1"
-                             "pc2"
-                             "pc3"
-                             "pc4"
-                             "pc5"
-                             "pc6";
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
     }
 
     .catalogueContainer {

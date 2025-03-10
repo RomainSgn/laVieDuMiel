@@ -7,5 +7,6 @@ modifBtn.addEventListener('click', function(){
 })
 
 function afficherForm(){
+    userInfos.style.display = "none"
     formModif.style.display = "block"
 }
