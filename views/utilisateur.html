@@ -1,0 +1,53 @@
+<main>
+    <div class="userContainer">
+        <h1>Mes Infos</h1>
+        <div class="userInfosContainer" id="userInfosContainer">
+            <img class="imgUser" src="../assets/img/illustration.webp" alt="Photo de profil">
+            <div class="userInfos">
+                <ul>
+                    <li class="listUser">Nom : Nom Utilisateur</li>
+                    <li class="listUser">Prénom : Prénom Utilisateur</li>
+                    <li class="listUser">Email : Email Utilisateur</li>
+                    <li class="listUser">Téléphone : Téléphone Utilisateur</li>
+                    <li class="listUser">Adresse : Adresse Utilisateur</li>
+                    <li class="listUser">Code postal : Code postal Utilisateur</li>
+                    <li class="listUser">Ville : Ville Utilisateur</li>
+                </ul>
+            </div>
+            <button class="modifInfosUser" id="modifBtn">Modifier mes informations</button>
+        </div>
+
+        <div class="formModifUser" id="formModifUser">
+            <form method="post" action="#" enctype="multipart/form-data" class="modifUser">
+
+                <div class="formGroup">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="formGroup">
+                    <label for="telephone">Téléphone :</label>
+                    <input type="tel" id="telephone" name="telephone">
+                </div>
+
+                <div class="formGroup">
+                    <label for="adresse">Adresse :</label>
+                    <input type="text" id="adresse" name="adresse">
+                </div>
+
+                <div class="formGroup">
+                    <label for="newCodePostal">Code postal :</label>
+                    <input type="number" id="newCodePostal" name="newCodePostal">
+                </div>
+
+                <div class="formGroup">
+                    <label for="ville">Ville :</label>
+                    <input type="text" id="ville" name="ville">
+                </div>
+
+                <button type="submit" name="submitModif" class="btn">Modifier</button>
+            </form>
+        </div>
+    </div>
+</main>
+<script src="../assets/js/utilisateurs.js"></script>

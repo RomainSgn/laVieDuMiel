@@ -1,0 +1,133 @@
+.catalogueContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.25rem auto;
+    padding: 1.25rem;
+}
+
+.gridContainerCatalogue {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 6.25rem;
+    grid-template-areas: "pc1 pc2 pc3"
+                         "pc4 pc5 pc6";
+}
+
+.pc1 {
+    grid-area: pc1;
+}
+
+.pc2 {
+    grid-area: pc2;
+}
+
+.pc3 {
+    grid-area: pc3;
+}
+
+.pc4 {
+    grid-area: pc4;
+}
+
+.pc5 {
+    grid-area: pc5;
+}
+
+.pc6 {
+    grid-area: pc6;
+}
+
+.productContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 1.25rem;
+}
+
+.titleImgProduct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleImgProduct img {
+    margin: auto 3.125rem auto 0px;
+}
+
+.productText {
+    text-align: center;
+}
+
+.addCart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCBC24;
+    border-radius: 7px;
+    padding: 0.625rem;
+}
+
+.addCart:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #FFD700;
+}
+
+@media (max-width: 1024px) {
+    .gridContainerCatalogue {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 4rem;
+        grid-template-areas: "pc1 pc2"
+                             "pc3 pc4"
+                             "pc5 pc6";
+    }
+
+    .productContainer {
+        padding: 1rem;
+    }
+
+    .titleImgProduct img {
+        margin: auto 2rem auto 0;
+    }
+
+    .addCart {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .gridContainerCatalogue {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        gap: 2rem;
+        grid-template-areas: "pc1"
+                             "pc2"
+                             "pc3"
+                             "pc4"
+                             "pc5"
+                             "pc6";
+    }
+
+    .catalogueContainer {
+        padding: 1rem;
+    }
+
+    .productContainer {
+        padding: 0.75rem;
+    }
+
+    .titleImgProduct img {
+        margin: auto 1.5rem auto 0;
+    }
+
+    .addCart {
+        padding: 0.4rem;
+    }
+}

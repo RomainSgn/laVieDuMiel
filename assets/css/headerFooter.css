@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 30%;
+    margin-left: 3.125rem;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FCBC24;
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+    background-image: url(../img/alveoles.png);
+    background-size: contain;
+}
+.headerContainer .navbar{
+    width: 100%;
+    
+}
+.navbar, .navbarElements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbarElements{
+    width: 100%;
+}
+.navbarElements li{
+    list-style-type: none;
+    margin: auto 2.5%;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 10px;
+}
+.navbarElements li:hover {
+    transform: scale(1.05);
+
+}
+.navbarElements li a {
+    text-decoration: none;
+    color: black;
+    
+}
+.cartConnectContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+}
+.imgLink {
+    width: 20%;
+    margin-right: 20px;
+    border: 2px solid black;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.imgLink:hover {
+    transform: scale(1.05);
+}
+.cartImg{
+    width: 70%;
+}
+.cartConnectContainer ul li{
+    list-style-type: none;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 10px;
+    text-align: center;
+}
+.cartConnectContainer ul li:first-child{
+    margin-bottom: 10px;
+}
+.cartConnectContainer ul li:hover {
+    transform: scale(1.05);
+
+}
+.cartConnectContainer ul li a{
+    text-decoration: none;
+    color: black;
+}
+.bandeau {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%; 
+    background-color: #FFD700; 
+    padding: 1%; 
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+  /* --------------------- Footer ------------------- */
+
+.footerContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FCBC24;
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+    background-image: url(../img/alveoles.png);
+    background-size: contain;
+}
+.mentions{
+    text-decoration: none;
+    color: black;
+}
+.socialNetwork{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialNetwork ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+}
+.socialNetwork ul li{
+    list-style-type: none;
+    margin: auto 10%;
+}
+.socialNetwork ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.imgNetwork{
+    width: 1.875rem;
+}

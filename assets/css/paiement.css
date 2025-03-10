@@ -1,0 +1,99 @@
+.paiementContainair {
+    margin: 1.25rem auto;
+}
+
+.paiementContainair, .panierContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.panierContainer {
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 90%;
+    padding: 1.25rem;
+}
+
+.produitPanier {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+}
+
+.cartPaiementButton {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 75%;
+}
+
+.paiementButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCBC24;
+    border-radius: 7px;
+    padding: 0.625rem;
+    margin-top: 0.625rem;
+}
+
+.paiementButton:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #FFD700;
+}
+
+@media screen and (max-width: 1024px) {
+    .panierContainer {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .produitPanier {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .cartPaiementButton {
+        width: 85%;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .paiementButton {
+        width: 100%;
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .panierContainer {
+        width: 100%;
+        padding: 0.75rem;
+    }
+
+    .produitPanier {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 0.75rem;
+    }
+
+    .cartPaiementButton {
+        width: 100%;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .paiementButton {
+        width: 100%;
+        padding: 0.4rem;
+    }
+}
