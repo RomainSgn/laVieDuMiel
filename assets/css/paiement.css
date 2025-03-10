@@ -12,7 +12,7 @@
 .panierContainer {
     border: 1px solid black;
     border-radius: 7px;
-    width: 90%;
+    width: 85%;
     padding: 1.25rem;
 }
 
@@ -46,9 +46,8 @@
     background-color: #FFD700;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
     .panierContainer {
-        width: 95%;
         padding: 1rem;
     }
 
@@ -72,9 +71,8 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
     .panierContainer {
-        width: 100%;
         padding: 0.75rem;
     }
 

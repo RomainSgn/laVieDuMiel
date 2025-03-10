@@ -1,6 +1,19 @@
+@font-face {
+    font-family: "sileighty";
+    src:
+      local("Sileighty"),
+      url("../fonts/Sileighty-Regular.otf") format("opentype"),
+      url("../fonts/Sileighty-Regular.ttf") format("trueType"),
+}
+
 * {
     margin: 0;
     padding: 0;
+    font-family: "Roboto";
+}
+
+h1, h2 {
+    font-family: "Sileighty", sans-serif;
 }
 
 html, body {

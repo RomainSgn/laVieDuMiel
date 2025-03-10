@@ -3,11 +3,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1.25rem auto;
-    padding: 1.25rem;
+    padding: 1rem 3.125rem 3.125rem;
 }
 
 .gridContainerCatalogue {
+    margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
@@ -112,7 +112,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     .catalogueContainer {

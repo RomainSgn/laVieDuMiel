@@ -1,10 +1,12 @@
 .userContainer{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    margin-bottom: 20px;
+    gap: 1.25rem;
+    margin-bottom: 1.25rem;
     height: 70vh;
+    padding: 1.25rem;
 }
 
 .userInfosContainer {
@@ -63,7 +65,7 @@
 }
 
 #email {
-    margin-left: 2.375rem;
+    margin-left: 2.688rem;
 }
 
 #telephone {
@@ -75,7 +77,7 @@
 }
 
 #ville {
-    margin-left: 2.813rem;
+    margin-left: 3.438rem;
 }
 
 .btn {
