@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem 3.125rem 3.125rem;
+    padding: 1rem 4rem 4rem;
 }
 
 .gridContainerCatalogue {
@@ -49,6 +49,7 @@
     border: 1px solid black;
     border-radius: 7px;
     padding: 1.25rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .titleImgProduct {
@@ -82,9 +83,6 @@
 }
 
 @media (max-width: 1024px) {
-    .catalogueContainer {
-        margin-bottom: 10px;
-    }
     .gridContainerCatalogue {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, auto);

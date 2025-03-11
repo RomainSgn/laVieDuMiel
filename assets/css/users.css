@@ -17,6 +17,7 @@
     border-radius: 7px;
     width: 75%;
     padding: 1.25rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .imgUser {
@@ -51,6 +52,7 @@
     width: 75%;
     margin-top: 1.25rem;
     padding: 1.25rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .modifUser {
@@ -78,6 +80,11 @@
 
 #ville {
     margin-left: 3.438rem;
+}
+
+.inputModif:hover {
+    box-shadow: 0 0 20px #FCBC24;
+    transform: scale(1.1);
 }
 
 .btn {

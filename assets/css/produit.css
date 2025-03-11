@@ -12,6 +12,7 @@
     padding: 0.625rem;
     width: 90%;
     margin-top: 0.625rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .descImgProduct {

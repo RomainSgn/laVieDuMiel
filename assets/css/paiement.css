@@ -1,8 +1,8 @@
-.paiementContainair {
+.paiementContainer {
     margin: 1.25rem auto;
 }
 
-.paiementContainair, .panierContainer {
+.paiementContainer, .panierContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,6 +14,7 @@
     border-radius: 7px;
     width: 85%;
     padding: 1.25rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .produitPanier {
